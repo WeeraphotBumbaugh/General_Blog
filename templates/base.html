@@ -29,6 +29,11 @@
             <div class="justify-content-end">
                 {% if user.is_authenticated %}
                     <button class="btn btn-outline-danger my-2 my-sm-0" type="button">
+                        <a class="nav-item nav-link" href="{% url 'password_change' %}">
+                            Change Password
+                        </a>
+                    </button>
+                    <button class="btn btn-outline-danger my-2 my-sm-0" type="button">
                         <a class="nav-item nav-link" href="{% url 'logout' %}">
                             Log Out
                         </a>
